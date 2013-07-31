@@ -128,11 +128,11 @@
 
 - (void)showStoreKitProductWithParameter:(NSString *)parameter fallbackURL:(NSURL *)URL
 {
-    if ([MPStoreKitProvider deviceHasStoreKit]) {
-        [self presentStoreKitControllerWithItemIdentifier:parameter fallbackURL:URL];
-    } else {
-        [self openURLInApplication:URL];
-    }
+//    if ([MPStoreKitProvider deviceHasStoreKit]) {
+//        [self presentStoreKitControllerWithItemIdentifier:parameter fallbackURL:URL];
+//    } else {
+    [self openURLInApplication:URL];
+//    }
 }
 
 - (void)openURLInApplication:(NSURL *)URL
